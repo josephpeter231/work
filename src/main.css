@@ -214,7 +214,7 @@
     font-family: Quicksand;
     background: #15113B;
     width:auto;
-    height: 3332px;
+    height: 2300px;
     flex-shrink: 0;
     position: relative;
     .benefits-interior{
@@ -224,7 +224,7 @@
         border-radius: 25px;
         margin-left:50px;
         width: 1290px;
-        height: 3116px;
+        height: 2200px;
     }
     .classs{
         color: #000;
@@ -241,20 +241,61 @@
     .class2{
         padding:30px 290px 0px 320px;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
     }
     .c-6{
-        position:absolute;
         display:flex;
         flex-direction: row;
+        height:400px;
+        margin-right:40px;
         margin:50px;
         border-radius: 25px;
-        background-color: #ddf4ff;
-        
+        background-color: #ddf4ff;     
+    }
+    .c-6-sub2{
+        display:flex;
+        flex-direction: column;
+    }
+    .imginterior{
+        margin-top:50px;
+        height:310px;
+        margin-left:70px;
+    }
+    .imginterior2{
+        margin-top:50px;
+        height:310px;
+        margin-right:65px;
     }
     .c-6-text2{
-        margin-left:180px;
+        font-style: normal;
+        font-size:36px;
+        font-weight:900px;
+        margin-top:125px;
+        margin-left:100px;
+        margin-bottom:20px;
+    }
+    .c6-text3{
+        margin-left:100px;
+        font-weight: 500;
+        margin-right:100px;
+        line-height: normal;
+    }
+    .c6-text4{
+        margin-left:100px;
+        font-weight: 500;
+        margin-right:100px;
+        line-height: normal;
+    }
+    .endofbenefits{
+        margin:50px;    
+        color: #000;
+        text-align: center;
+        font-family: Quicksand;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
     }
 }
 
@@ -272,8 +313,6 @@
       background-image: url('./assets/ms-it-parkwebp.png');
     }
   
-  
-    /* Styles for text within the media query */
     .text {
         margin-left: 20px;
         margin-right: 20px;
