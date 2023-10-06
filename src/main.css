@@ -1,0 +1,296 @@
+.body{
+    font-family: Quicksand, 'Source Sans Pro';
+}
+.backimage {
+    margin-top: 22px;
+    margin-left: 635px;
+    margin-right: 635px;
+    /* margin-bottom: 88px; */
+    background-size: 100% 100%;
+    flex-shrink: 0;
+    height: 55px;
+    position: relative;
+    width: 130px;
+    background-image: url('./assets/ms-it-parkwebp.png');
+    flex-shrink: 0;
+    align-items: center;
+  }
+  .text{
+    margin-top:40px;
+    align-items: center;
+    /* margin-left: 212px;
+    margin-right: 212px; */
+    text-align: center;
+    font-size : 2.1rem;
+    font-weight: 700;
+    height:104px;
+    line-height: 1.1818181818;
+    color : #080337;
+    font-family: Quicksand, 'Source Sans Pro';
+    flex-shrink: 0;
+}
+.c-3-text{
+    
+    margin-top:6px;
+    text-align: center;
+    font-style: normal;
+    font-family: Quicksand, 'Source Sans Pro';
+    font-size : 17.5px;
+    font-weight: 700;
+    color: #080337;
+}
+.c-3{
+    margin-top:28px;
+    align-items: center;
+    margin-left:470px;
+    width: 470px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 100.5px;
+    border: 2.5px solid #9B9B9B;
+}
+.c-4{
+    margin-top:50px;
+    margin-left: 570px;
+    background-size: 100% 100%;
+    background-image:url('./assets2/Illustration\ 1.png');
+    height: 310px;
+    position: relative;
+    width: 310px;
+}
+.c-5-text{
+    font-family: Quicksand, 'Source Sans Pro';
+    text-align:center;
+    /* font-family:  'Source Sans Pro'; */
+    margin: 70px 70px 50px 70px;
+    color: #787c8b;
+    font-weight: 400;
+    line-height: 27px
+}
+.reach-us{
+    margin:0px 0px 50px 670px;
+    width:100px;
+    color:white;
+    background: #0092D3;
+    border-radius: 100px ;
+    border:2.5px solid #0092d3;
+}
+.count{
+    padding-left: 20px;
+    align-items: center;
+    font-family: Quicksand, 'Source Sans Pro';
+    display:flex;
+    flex-direction: row;
+    background-color: #ddf5ff;
+}
+.experience{
+    margin-right:260px;
+    margin-left:100px;
+    align-items: center;
+    
+    display:flex;
+    flex-direction: column;
+}
+.star1{
+    height: 30px;
+    margin:50px 190px 12px 0px;
+}
+.star2{
+    height: 30px;
+    margin:15px 0px 12px 80px;
+}
+.star3{
+    height: 30px;
+    margin:50px 190px 12px 0px;
+}
+.star4{
+    height: 30px;
+    margin:15px 0px 12px 80px;
+}
+.star5{
+    height: 30px;
+    margin:50px 190px 12px 310px;
+}
+.star6{
+    height: 30px;
+    margin:20px 190px 12px 0px;
+}
+.five{
+    font-size: 55px; /* 30px */
+    line-height: 2.25rem; /* 36px */
+    font-weight:900px;
+}
+.yoe{
+    font-family: Quicksand, 'Source Sans Pro';
+    margin-top: 15px;
+    font-size:15px;
+    font-weight:500px;
+    color: #0d0a30;
+    align-items: center;
+    
+}
+.clients{
+    margin-left: 0px;
+    align-items: center;
+    margin-right:140px;
+    display:flex;
+    flex-direction: column;
+}
+.projects{
+    align-items: center;
+    margin-left: px;
+    display:flex;
+    flex-direction: column;
+}
+.watslaravel{
+    margin:85px 0px 40px 190px;
+    color: #0D0A30;
+    font-family: Quicksand;
+    font-size : 2.1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+
+}
+.row1{
+    font-family: Quicksand;   
+    align-items: center;
+    
+    margin:0px 0px 0px 190px;
+    display:flex;
+    flex-direction: row;
+    
+.co1{
+    border-radius: 25px;
+    width:490px;
+    background: #DDF5FF;
+    font-family: Quicksand;  
+    margin-bottom: 30px;  
+}
+.co2{
+    margin-bottom: 30px;
+    margin-left:30px;
+    border-radius: 25px;
+    width:490px;
+    background: #DDF5FF;
+    font-family: Quicksand;    
+}
+.o1{
+    color: #000;
+    font-size: 2.1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin:  30px 30px 30px 30px;
+}
+.content{
+    font-family:Quicksand;  
+    width: 390px;
+    margin-left:30px;
+    background: #DDF5FF;
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900px;
+    line-height: normal;
+    }
+}
+.co4{
+    margin-bottom: 30px;
+    margin-left:30px;
+    border-radius: 25px;
+    width:490px;
+    background: #DDF5FF;
+    font-family: Quicksand; 
+     
+
+
+}
+.imagerows{
+    margin-left: 140px;
+    margin-bottom:40px;
+}
+.benefits{
+    font-family: Quicksand;
+    background: #15113B;
+    width:auto;
+    height: 3332px;
+    flex-shrink: 0;
+    position: relative;
+    .benefits-interior{
+        margin-top:60px;
+        background-color: #f9faff;
+        position:absolute;
+        border-radius: 25px;
+        margin-left:50px;
+        width: 1290px;
+        height: 3116px;
+    }
+    .classs{
+        color: #000;
+        margin-top:60px;
+        margin-left:100px;
+        margin-right:100px;
+        text-align: center;
+        font-family: Quicksand;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 52px; 
+    }
+    .class2{
+        padding:30px 290px 0px 320px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+    }
+    .c-6{
+        position:absolute;
+        display:flex;
+        flex-direction: row;
+        margin:50px;
+        border-radius: 25px;
+        background-color: #ddf4ff;
+        
+    }
+    .c-6-text2{
+        margin-left:180px;
+    }
+}
+
+
+@media (max-width: 342px) {
+    .backimage {
+      margin-top: 32px;
+      margin-right: 20px;
+      margin-bottom: 32px;
+      margin-left: 120px;
+      position: relative;
+      flex-shrink: 0;
+      width: 82px;
+      height: 38px;
+      background-image: url('./assets/ms-it-parkwebp.png');
+    }
+  
+  
+    /* Styles for text within the media query */
+    .text {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size:13px;
+        font-weight: 700;
+        height:104px;
+        line-height: 1.1818181818;
+        color : #080337;
+        font-family: Quicksand, 'Source Sans Pro';
+        flex-shrink: 0;
+        
+        
+    }
+  }
+  
+
+
+
+
+
