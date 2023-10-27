@@ -1,6 +1,6 @@
 import '../App.css'
 
-import { Link,Outlet } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 const Intro = () => {
   return (
@@ -8,7 +8,7 @@ const Intro = () => {
     <div className="mx-10 h-full ">
 
 
-      <div className='header flex flex-row '>
+      <div className='header flex flex-row  mt-10'>
         <div className='flex flex-row mr-12 ml-16'>
           <a  className='text-black flex flex-row justify-center items-center font-bold text-xl mr-16 '>ACM
            <img src="src/assets/acm2.png" className='ml-2' height={30} width={30} alt="" />
@@ -39,7 +39,7 @@ const Intro = () => {
             <h1 className="introHeaderText text-black font-bold text-4xl text-left"> Solution !!! </h1>
           </div>
           <div className='flex justify-center'>
-            <Link to="/login">
+            <Link to="/loginOrSignup">
               <button className='text-white bg-blue-600 px-4 py-2 rounded-md mt-7 text-xl'>Get Started</button>
             </Link>
           </div>

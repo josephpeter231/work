@@ -5,6 +5,7 @@ import Intro from "./Components/Intro";
 import PageNotFound from "./Components/PageNotFound";
 import Profile from "./Components/Profile";
 import LoginOrSignup from "./Components/Login/LoginOrSignup";
+import Configuration from "./Components/Configuration";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/profile"  element={<Profile/>}/>
         <Route path="*"  element={<PageNotFound/>}/>
         <Route path='/loginOrSignup' element={<LoginOrSignup/>}/>
+        <Route path='/config' element={<Configuration/>}/>
       </Routes>
     </BrowserRouter>
      
