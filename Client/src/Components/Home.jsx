@@ -1,11 +1,10 @@
 
+import { Link } from "react-router-dom"
 
 const Home = () => {
   return (
-
-
     <div className="h-full flex flex-col">
-      <div className='header flex flex-1 flex-row bg-blue-600 py-2 mb-10 w-full'>
+      <div className='header flex flex-1 flex-row bg-blue-600 py-2 mb-10  w-full'>
         <div className='flex flex-row justify-center items-center mr-12 ml-16 w- full'>
           <a  className='text-white flex flex-row justify-center items-center font-bold text-xl mr-16 font-sans'>ACM
            <img src="src/assets/acm2.png" className='ml-2' height={30} width={30} alt="" />
@@ -16,7 +15,9 @@ const Home = () => {
           
         </div>
         <div className=" flex justify-center items-center ml-auto mr-10 self-end">
-            <img src="src/assets/profile.png" height={50} width={50} alt="" />
+          <Link to = "/profile">
+          <img src="src/assets/profile.png" height={50} width={50} alt="" />
+          </Link>
         </div>
         
       </div>
@@ -67,7 +68,7 @@ const Home = () => {
         <div className="flex flex-col justify-center items-center h-full ">
 
           <div className="border-2 border-blue-500 p-3 mt-5">
-            <img src="src/assets/createNew.png" height={50} width={50} alt="" />
+            <Link to='/config'><img src="src/assets/createNew.png" height={50} width={50} alt="" /></Link>
           </div>
           <h2 className="text-black font-semibold text-2xl mt-5">Create New Config</h2>
 

@@ -5,6 +5,7 @@ import Intro from "./Components/Intro";
 import PageNotFound from "./Components/PageNotFound";
 import Profile from "./Components/Profile";
 import LoginOrSignup from "./Components/Login/LoginOrSignup";
+import Configuration from "./Components/Configuration";
 
 // import Configuration from "./Components/Configuration";
 
@@ -22,6 +23,8 @@ function App() {
         {/* <Route path="/config"  element={<Configuration/>}/> */}
         <Route path='/loginOrSignup' element={<LoginOrSignup/>}/>
         <Route path="*"  element={<PageNotFound/>}/>
+        <Route path='/config' element={<Configuration/>}/>
+
       </Routes>
     </BrowserRouter>
      

@@ -13,7 +13,7 @@
 }
 .Login_title{
     margin-top: 50px;
-    color: #000;
+    color: #fff;
     font-weight: 700;
 }
 
@@ -25,7 +25,7 @@
     gap: 4.5rem;
     height: 100%;
     width: 100%;
-    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    background: -webkit-linear-gradient(right, #0074b4, #3399ff, #0074b4, #3399ff);
 }
 .Initial_cont{
     display: flex;
