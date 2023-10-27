@@ -1,8 +1,14 @@
-import React from 'react'
+
 
 const Configuration = () => {
   return (
-    <div>Configuration</div>
+    <div className="flex flex-col items-center">
+
+      <div className="flex">
+
+      </div>
+
+    </div>
   )
 }
 
