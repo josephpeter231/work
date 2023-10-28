@@ -3,7 +3,7 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Intro from "./Components/Intro";
 import PageNotFound from "./Components/PageNotFound";
-import Profile from "./Components/Profile";
+import Profile from "./Components/Profile/Profile";
 import LoginOrSignup from "./Components/Login/LoginOrSignup";
 import Configuration from "./Components/Configuration";
 
