@@ -7,7 +7,6 @@ import Profile from "./Components/Profile";
 import LoginOrSignup from "./Components/Login/LoginOrSignup";
 import Configuration from "./Components/Configuration";
 
-// import Configuration from "./Components/Configuration";
 
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         <Route path='/' element={<Intro />} exact />
         <Route path="/home"  element={<Home/>}/>
         <Route path="/profile"  element={<Profile/>}/>
-        {/* <Route path="/config"  element={<Configuration/>}/> */}
         <Route path='/loginOrSignup' element={<LoginOrSignup/>}/>
         <Route path="*"  element={<PageNotFound/>}/>
         <Route path='/config' element={<Configuration/>}/>

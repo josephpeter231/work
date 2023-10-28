@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Formik, Form, Field } from 'formik';
 
 const Profile = () => {
