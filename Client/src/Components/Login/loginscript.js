@@ -22,7 +22,7 @@ export function setupLoginSignupBehavior() {
 }
 
 export function setupAdminLoginSignupBehavior() {
-  const loginText1 = document.querySelector(".title-text_admin .login");
+  const loginText1 = document.querySelector(".title-text_admin .login_admin");
   const loginForm1 = document.querySelector("form.login_admin");
   const loginBtn1 = document.querySelector("label.login_admin");
   const signupBtn1 = document.querySelector("label.signup_admin");
