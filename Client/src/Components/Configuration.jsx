@@ -143,19 +143,21 @@ const Configuration = () => {
             </div>
           ))}
 
-          <button
-            className="bg-blue-600 text-white px-3 py-2 flex rounded-md max-w-xs my-4 "
-            onClick={addNewField}
-          >
-            Add New
-          </button>
+          <div>
+            <button
+              className="bg-blue-600 text-white px-3 py-2 flex rounded-md max-w-xs my-4 "
+              onClick={addNewField}
+            >
+              Add New 
+            </button>
 
-          <button
-            className="bg-red-600 text-white px-3 py-2 flex rounded-md max-w-xs "
-            onClick={formik.handleSubmit}
-          >
-            Save Changes
-          </button>
+            <button
+              className="bg-red-600 text-white px-3 py-2 flex rounded-md max-w-xs "
+              onClick={formik.handleSubmit}
+            >
+              Save Changes
+            </button>
+          </div>
         </div>
       </div>
     </div>

@@ -4,22 +4,37 @@ import { Link } from "react-router-dom"
 const Home = () => {
   return (
     <div className="h-full flex flex-col">
-      <div className='header flex flex-1 flex-row bg-blue-600 py-2 mb-10  w-full'>
-        <div className='flex flex-row justify-center items-center mr-12 ml-16 w- full'>
-          <a  className='text-white flex flex-row justify-center items-center font-bold text-xl mr-16 font-sans'>ACM
-           <img src="src/assets/acm2.png" className='ml-2' height={30} width={30} alt="" />
+      <div className="header flex flex-1 flex-row bg-blue-600 py-2 mb-10 w-full px-20">
+        <div className="flex flex-row  ml-16 ">
+          <a className="text-white flex flex-row justify-start items-center font-bold text-xl font-sans">
+            ACM
+            <img
+              src="src/assets/acm2.png"
+              className="ml-2"
+              height={30}
+              width={30}
+              alt=""
+            />
           </a>
-          <a href="" className='text-white text-xl justify-center items-center font-semibold mr-16 font-sans'>Products</a>
-          <a href="" className='text-white text-xl justify-center items-center font-semibold mr-16 font-sans'>Solutions</a>
-          <a href="" className='text-white text-xl justify-center items-center font-semibold mr-16 font-sans'>About US</a>
-          
         </div>
-        <div className=" flex justify-center items-center ml-auto mr-10 self-end">
-          <Link to = "/profile">
-          <img src="src/assets/profile.png" height={50} width={50} alt="" />
+        <div className="flex w-full justify-center items-center">
+          <a
+            href=""
+            className="text-white text-xl  items-center font-semibold font-sans text-center"
+          >
+            PROJECT NAME
+          </a>
+        </div>
+        <div className="flex justify-center items-center ml-auto self-end">
+          <Link to="/profile">
+            <img
+              src="src/assets/profile.png"
+              height={50}
+              width={50}
+              alt=""
+            />
           </Link>
         </div>
-        
       </div>
 
       <div className=" flex-grow mx-20 mb-12 h-full">

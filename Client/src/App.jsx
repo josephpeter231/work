@@ -6,6 +6,7 @@ import PageNotFound from "./Components/PageNotFound";
 import Profile from "./Components/Profile/Profile";
 import LoginOrSignup from "./Components/Login/LoginOrSignup";
 import Configuration from "./Components/Configuration";
+import DeveloperConfiguration from "./Components/DeveloperConfiguration";
 
 
 
@@ -20,8 +21,9 @@ function App() {
         <Route path="/home"  element={<Home/>}/>
         <Route path="/profile"  element={<Profile/>}/>
         <Route path='/loginOrSignup' element={<LoginOrSignup/>}/>
-        <Route path="*"  element={<PageNotFound/>}/>
         <Route path='/config' element={<Configuration/>}/>
+        <Route path='/developerconfig' element={<DeveloperConfiguration/>}/>
+        <Route path="*"  element={<PageNotFound/>}/>
 
       </Routes>
     </BrowserRouter>
