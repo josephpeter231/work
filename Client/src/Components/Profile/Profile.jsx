@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faBell, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
-import { faPen } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faEnvelope, faBell, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+// import { faPen } from '@fortawesome/free-solid-svg-icons';
 import { Formik, Form, Field } from 'formik';
 import './profile.css';
 
