@@ -1,8 +1,25 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { useFormik } from "formik";
 
 const Configuration = () => {
-  const formik = useFormik({
+  const developers = [
+    'Developer 1',
+    'Developer 2',
+    'Developer 3',
+    'Developer 4',
+    'Developer 5',
+    'Developer 6',
+    'Developer 7',
+    'Developer 8',
+    'Developer 9',
+    'Developer 11',
+    'Developer 21',
+    'Developer 31',
+    // Add more developers to this array
+  ];
+
+   const formik = useFormik({
     initialValues: {
       Name:"",
       version:"",
@@ -13,12 +30,36 @@ const Configuration = () => {
           editAccess: false,
         },
       ],
+      developers:[],
     },
     onSubmit: (values) => {
       // Handle form submission here
       console.log(values);
     },
   });
+
+
+  const [selectedDevelopers, setSelectedDevelopers] = useState([]); // Initialize selected developers state
+
+  const handleDeveloperChange = (event) => {
+     const selectedDeveloper = event.target.value;
+     let updatedDevelopers;
+    
+    if (selectedDevelopers.includes(selectedDeveloper)) {
+      updatedDevelopers = selectedDevelopers.filter((developer) => developer !== selectedDeveloper);
+    } else {
+      updatedDevelopers = [...selectedDevelopers, selectedDeveloper];
+    }
+
+    setSelectedDevelopers(updatedDevelopers);
+     setSelectedDevelopers(updatedDevelopers);
+
+    // Update the Formik developers field
+    formik.setFieldValue("developers", updatedDevelopers);
+  };
+
+  
+ 
 
   const addNewField = () => {
     formik.setFieldValue("fields", [
@@ -83,6 +124,7 @@ const Configuration = () => {
               name="Name"
               onChange={formik.handleChange}
               value={formik.values.Name}
+              required
               className="w-full p-2 rounded border border-gray-300 focus:outline-none focus:ring focus:border-blue-400 text-black"
             />
           </div>
@@ -94,6 +136,7 @@ const Configuration = () => {
               name="version"
               onChange={formik.handleChange}
               value={formik.values.version}
+              required
               className="w-full p-2 rounded border border-gray-300 focus:outline-none focus:ring focus:border-blue-400 text-black"
             />
           </div>
@@ -107,6 +150,7 @@ const Configuration = () => {
                 placeholder="Field Label"
                 onChange={formik.handleChange}
                 value={field.fieldLabel}
+                required
                 className="py-2 px-2 rounded border border-gray-300 focus:outline-none focus:ring focus:border-blue-400 text-black mb-4"
               />
               <input
@@ -115,6 +159,7 @@ const Configuration = () => {
                 name={`fields[${index}].fieldValue`}
                 onChange={formik.handleChange}
                 value={field.fieldValue}
+                required
                 className="w-full p-2 rounded border border-gray-300 focus:outline-none focus:ring focus:border-blue-400 text-black"
               />
               <div className="flex items-center space-x-2 mt-3">
@@ -130,6 +175,7 @@ const Configuration = () => {
                     name={`fields[${index}].editAccess`}
                     onChange={formik.handleChange}
                     checked={field.editAccess}
+                    required
                     className="opacity-0 w-0 h-0"
                   />
                   <span
@@ -143,6 +189,51 @@ const Configuration = () => {
             </div>
           ))}
 
+          <div className="p-4 bg-gray-100 rounded-md shadow-md mt-4">
+             <style>
+              {`
+                select#developerSelect option:checked {
+                  background-color: #2563EB;
+                }
+              `}
+            </style>
+            <div className="container mx-auto">
+              <div className="flex space-x-4">
+                <div className="w-1/2">
+                  <h2 className="text-xl font-semibold mb-2 text-black">Developers</h2>
+                  <select
+                    id="developerSelect"
+                    className="border border-gray-500 p-2 w-full text-black bg-white px-4 py-2"
+                    multiple  
+                    value={selectedDevelopers}
+                    onChange={handleDeveloperChange}
+                    required
+                  >
+                    {developers.map((developer, index) => (
+                      <option key={index} value={developer} className="text-black bg-white my-1 py-1 px-2 rounded-md border-b-gray-300">
+                        {developer}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="w-1/2 ">
+                  <h2 className="text-xl font-semibold mb-2 text-black">Give Access to </h2>
+                  <div className=" overflow-y-auto max-h-36 bg-white px-5 py-2">
+                    <ul>
+                      {selectedDevelopers.map((developer, index) => (
+                        <li key={index} className="text-black py-1 ">{developer}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+     
+          </div>
+
+
           <div>
             <button
               className="bg-blue-600 text-white px-3 py-2 flex rounded-md max-w-xs my-4 "
@@ -152,6 +243,7 @@ const Configuration = () => {
             </button>
 
             <button
+              type = "submit"
               className="bg-red-600 text-white px-3 py-2 flex rounded-md max-w-xs "
               onClick={formik.handleSubmit}
             >
