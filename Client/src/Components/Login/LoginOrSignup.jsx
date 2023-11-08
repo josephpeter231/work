@@ -17,7 +17,7 @@ const LoginOrSignup = () => {
   return (
     <div className='App'>
       <div className='Login_main_title_cont'>
-        <h1 className='Logo_title'>ACM</h1>
+        <h1 className='Logo_title'>APPLICATION CONFIGURATION MANAGEMENT</h1>
       </div>
       <div className='Common_cont'>
         <div className='Left_cont'>
