@@ -1,4 +1,5 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom";
+import {Provider} from 'react-redux'
 
 import Home from "./Components/Home";
 import Intro from "./Components/Intro";
@@ -9,13 +10,15 @@ import Configuration from "./Components/Configuration";
 import DeveloperConfiguration from "./Components/DeveloperConfiguration";
 import DeveloperHome from "./Components/DeveloperHome";
 
+import store from "./Store/store.js";
+
 
 
 function App() {
   
 
   return (
-    <>
+    <Provider store={store}>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Intro />} exact />
@@ -29,8 +32,7 @@ function App() {
 
       </Routes>
     </BrowserRouter>
-     
-    </>
+    </Provider>
   )
 }
 
