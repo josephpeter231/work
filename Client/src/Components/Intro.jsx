@@ -18,8 +18,10 @@ const Intro = () => {
           <a href="" className='text-black text-xl justify-center items-center font-semibold mr-16 hover:text-blue-600'>About US</a>
         </div>
         <div className='flex flex-row'>
+        <Link to="/loginOrSignup">
           <a href="" className='text-black text-xl justify-center items-center font-semibold mr-16 hover:text-blue-600'>For Developers</a>
           <a href="" className='text-black text-xl justify-center items-center font-semibold  hover:text-blue-600'>For Admin</a>
+          </Link>
         </div>
       </div>
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react";
 
 const LoginOrSignup = () => {
@@ -60,6 +61,46 @@ const LoginOrSignup = () => {
             id="password"
             className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500 bg-white text-black"
           />
+=======
+import React, { useState } from 'react';
+import AdminForm from './AdminForm';
+import DevForm from './DevForm';
+import './loginOrSignup.css';
+
+const LoginOrSignup = () => {
+  const [showAdminForm, setShowAdminForm] = useState(true);
+
+  const switchToAdminForm = () => {
+    setShowAdminForm(true);
+  };
+
+  const switchToDevForm = () => {
+    setShowAdminForm(false);
+  };
+
+  return (
+    <div className='App'>
+      <div className='Login_main_title_cont'>
+        <h1 className='Logo_title'>APPLICATION CONFIGURATION MANAGEMENT</h1>
+      </div>
+      <div className='Common_cont'>
+        <div className='Left_cont'>
+          <button
+            className={`Admin_btn ${showAdminForm ? 'active' : ''}`}
+            onClick={switchToAdminForm}
+          >
+            Admin
+          </button>
+          <button
+            className={`Dev_btn ${!showAdminForm ? 'active' : ''}`}
+            onClick={switchToDevForm}
+          >
+            Developer
+          </button>
+        </div>
+        <div className='Right_cont'>
+          {showAdminForm ? <AdminForm /> : <DevForm />}
+>>>>>>> 9e691d52b8acd97a7f3e6b4bda9d34a614e644be
         </div>
       </div>
     </div>
